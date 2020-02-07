@@ -17,7 +17,7 @@ end
 
 def run_guessing_game
   correct_number = random_number
-  ask_for_input
+  #ask_for_input
   player_guess = player_input
   if player_guess == "exit"
   elsif player_guess == correct_number
