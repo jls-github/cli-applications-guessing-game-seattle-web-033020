@@ -11,6 +11,20 @@ def player_input
   gets.chomp
 end
 
-def correct_guess?
+def correct_guess?(player_guess, correct_number)
   player_guess == correct_number
 end
+
+def run_guessing_game
+  correct_number = random_number
+  ask_for_input
+  player_guess = player_input
+  if player_guess == "exit"
+    break
+  elsif player_guess == correct_number
+    puts "You guessed the correct number!"
+  else
+    puts "Sorry! The computer guessed #{correct_number}"
+  end
+end
+  
