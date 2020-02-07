@@ -1,4 +1,7 @@
 # Code your solution here!
+
+require 'pry'
+
 def random_number
   rand(1..6)
 end
@@ -18,6 +21,7 @@ end
 def run_guessing_game
   correct_number = random_number
   #ask_for_input
+  binding.pry
   player_guess = player_input
   if player_guess == "exit"
     puts "Goodbye!"
